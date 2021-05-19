@@ -11,6 +11,7 @@ public class Question {
     public String difficulty;
     public String question;
     public String correctAnswer;
+    public List<String> incorrectAnswers = null;
 
     public String getCategory() {
         return category;
@@ -58,20 +59,5 @@ public class Question {
 
     public void setIncorrectAnswers(List<String> incorrectAnswers) {
         this.incorrectAnswers = incorrectAnswers;
-    }
-
-    public void setAdditionalProperties(Map<String, Object> additionalProperties) {
-        this.additionalProperties = additionalProperties;
-    }
-
-    public List<String> incorrectAnswers = null;
-    private Map<String, Object> additionalProperties = new HashMap<String, Object>();
-
-    public Map<String, Object> getAdditionalProperties() {
-        return this.additionalProperties;
-    }
-
-    public void setAdditionalProperty(String name, Object value) {
-        this.additionalProperties.put(name, value);
     }
 }

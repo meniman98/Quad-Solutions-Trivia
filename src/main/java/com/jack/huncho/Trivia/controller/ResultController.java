@@ -1,6 +1,5 @@
 package com.jack.huncho.Trivia.controller;
 
-import com.jack.huncho.Trivia.model.Question;
 import com.jack.huncho.Trivia.model.Result;
 import com.jack.huncho.Trivia.repository.ResultRepository;
 import org.springframework.boot.web.client.RestTemplateBuilder;
