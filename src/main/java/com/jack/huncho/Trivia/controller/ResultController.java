@@ -1,5 +1,6 @@
 package com.jack.huncho.Trivia.controller;
 
+import com.jack.huncho.Trivia.model.Question;
 import com.jack.huncho.Trivia.model.Result;
 import com.jack.huncho.Trivia.repository.ResultRepository;
 import org.springframework.boot.web.client.RestTemplateBuilder;
@@ -12,9 +13,13 @@ import org.springframework.web.client.RestTemplate;
 public class ResultController {
     private static final String BASE_URL = "https://opentdb.com/api.php?amount=5&category=18&difficulty=easy&type=multiple";
 
-    private final ResultRepository repo;
+    private ResultRepository repo;
 
-    public ResultController(ResultRepository repo) {
+    ResultController() {
+
+    }
+
+    ResultController(ResultRepository repo) {
         this.repo = repo;
     }
 
