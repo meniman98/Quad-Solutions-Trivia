@@ -6,7 +6,7 @@ import java.util.Map;
 
 public class Result {
 
-    public List<Question> results = null;
+    public List<Question> results;
 
     public List<Question> getResults() {
         return results;
