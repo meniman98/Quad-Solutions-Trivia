@@ -1,8 +1,12 @@
 package com.jack.huncho.Trivia.model;
 
+import com.fasterxml.jackson.annotation.JsonProperty;
+import com.fasterxml.jackson.databind.annotation.JsonSerialize;
+
 import java.util.List;
 
 public class Question {
+
 
     public String category;
     public String type;
